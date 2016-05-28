@@ -7118,7 +7118,7 @@ ModPE.langEdit("menu.options","§1Setelan");
 
 ModPE.langEdit("menu.skins","§1Skin");
 
-ModPE.langEdit("deathScreen.message","§1Innalillahi");
+ModPE.langEdit("deathScreen.message","Innalillahi");
 }
 
 //function 4
@@ -7151,7 +7151,7 @@ ModPE.langEdit("menu.options","§4Setelan");
 
 ModPE.langEdit("menu.skins","§4Skin");
 
-ModPE.langEdit("deathScreen.message","§4Innalillahi");
+ModPE.langEdit("deathScreen.message","Innalillahi");
 }
 
 //Var for the text (GLX)
