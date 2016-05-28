@@ -247,13 +247,13 @@ Layer.setOrientation(android.widget.LinearLayout.VERTICAL);
 Dialogy.show();
 Layer.addView(third);
 Layer.addView(second);
-Layer.addView(first);
 Layer.addView(another1);
+Layer.addView(first);
 Layer.addView(Exit);
 
 third.setText("1.2 \n+Translate to Indonesian \n+Changed Track List \n+Added New Menu (YT GLX) \n+Changed AutoUpdate \n+More");
 second.setText("\n\n1.3 \n+Added New Menu (ChangeLog) \n+Added Music Dialog \n+More");
-another1.setText("\n\n1.4 \n=Bug Fixed (messageLocating) \nSorry For The Bug ^-^");
+another1.setText("\n\n1.4 \n=Bug Fixed \nSorry For The Bug ^-^");
 first.setText("\n\nBug ? Message To Me ! \nFacebook: http://www.fb.me/m.rakha.f \nE-Mail: zozbangz@gmail.com \n\nJangan lupa untuk support developers yang asli ya ^-^ ! \nThx to AJ170 & All");
 Exit.setText("Ok");
 
@@ -2738,7 +2738,7 @@ return ChatColor[a[Math.floor(Math.random()*(a.length+1))]]
 
 
 //Update Code//
-var version="1.3";
+var version="1.4";
 var checkForUpdate=false;
 var updateWindow=false;
 var newUpdate;
@@ -7235,6 +7235,7 @@ function dip2px(ctx, dips){
 }
 
 function newLevel(){
+MusicPF();
 LoadTeleports();
 Info();
     clientMessage("§l§3===========================");
@@ -7243,7 +7244,6 @@ clientMessage("§b§l§oMenu By §6170_Crew");
 clientMessage("§b§l§oRemade by §aGoogleX")
 clientMessage("§b§l§ox: " + Math.floor(Player.getX()) + " §b§l§oy: " + Math.floor(Player.getY() - 1) + " §b§l§oz: " + Math.floor(Player.getZ()));
 clientMessage("§l§3===========================");
-MusicPF();
 
 Cbutton();
 }
