@@ -231,6 +231,7 @@ var Layer = new android.widget.LinearLayout(ctx);
 var scroller = new android.widget.ScrollView(ctx);
 var third = new android.widget.TextView(ctx);
 var second = new android.widget.TextView(ctx);
+var another1 = new android.widget.TextView(ctx);
 var first = new android.widget.TextView(ctx);
 var Dialogy = new android.app.Dialog(ctx);
 var Exit = new android.widget.Button(ctx);
@@ -247,10 +248,12 @@ Dialogy.show();
 Layer.addView(third);
 Layer.addView(second);
 Layer.addView(first);
+Layer.addView(another1);
 Layer.addView(Exit);
 
 third.setText("1.2 \n+Translate to Indonesian \n+Changed Track List \n+Added New Menu (YT GLX) \n+Changed AutoUpdate \n+More");
 second.setText("\n\n1.3 \n+Added New Menu (ChangeLog) \n+Added Music Dialog \n+More");
+another1.setText("\n\n1.4 \n=Bug Fixed (messageLocating) \nSorry For The Bug ^-^")
 first.setText("\n\nBug ? Message To Me ! \nFacebook: http://www.fb.me/m.rakha.f \nE-Mail: zozbangz@gmail.com \n\nJangan lupa untuk support developers yang asli ya ^-^ ! \nThx to AJ170 & All");
 Exit.setText("Ok");
 
@@ -7155,6 +7158,12 @@ function randW(x){
 	return x[Math.floor(Math.random()*x.length)];
 	var loopW=0;
 	}
+	
+//Var for the text (GLX)
+var loopW;
+var word = {
+	messageLocating:["§3Finding Kids To Troll","§eTrying to grief server","§4Grief Is Da Best","§f§kEaster §5Egg","§aDrinking Vodka","§aThanks Jeb_"]
+}
 
 //Looping For Re-Fresh Text
 do {
@@ -7162,12 +7171,6 @@ do {
     loopW++;
 }
 while (loopW < 1);
-	
-//Var for the text (GLX)
-var loopW;
-var word = {
-	messageLocating:["§3Finding Kids To Troll","§eTrying to grief server","§4Grief Is Da Best","§f§kEaster §5Egg","§aDrinking Vodka","§aThanks Jeb_"]
-}
 			
 ModPE.langEdit("progressScreen.message.done","§9Have Fun!");
 ModPE.langEdit("progressScreen.message.building","Remake By: §e§l§oGoogleX");
