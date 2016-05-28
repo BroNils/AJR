@@ -274,21 +274,21 @@ print("AJMODS MCPE FOUND A ERROR "+e)
 
 function MusicPF() {
     try {
-        var upd = new android.app.AlertDialog.Builder(ctx);
-        upd.setTitle("Musik");
-        upd.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
-        upd.setNegativeButton("Tidak", new android.content.DialogInterface.OnClickListener() {
-            onClick: function(par1) {
+        var mpf = new android.app.AlertDialog.Builder(ctx);
+        mpf.setTitle("Musik");
+        mpf.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
+        mpf.setNegativeButton("Tidak", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(x) {
             dialog.dismiss(); 
    }
         });
-        upd.setPositiveButton("Ya", new android.content.DialogInterface.OnClickListener() {
-            onClick: function(par1) {
+        mpf.setPositiveButton("Ya", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(x) {
 				 playMusic();
 				 clientMessage("Enjoy your music ^-^");
             }
         });
-        var dialog = upd.create();
+        var dialog = mpf.create();
         dialog.show() 
     }
     catch(err) {
