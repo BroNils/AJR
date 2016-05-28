@@ -183,15 +183,10 @@ var scroller = new android.widget.ScrollView(ctx);
 var third = new android.widget.TextView(ctx);
 var second = new android.widget.TextView(ctx);
 var first = new android.widget.TextView(ctx);
-var thirdy = new android.widget.TextView(ctx);
-var secondy = new android.widget.TextView(ctx);
-var firsty = new android.widget.TextView(ctx);
-var buggy = new android.widget.TextView(ctx);
-var support = new android.widget.TextView(ctx);
 var Dialogy = new android.app.Dialog(ctx);
 var Exit = new android.widget.Button(ctx);
 
-Dialogy.setTitle("Track List:");
+Dialogy.setTitle("Daftar Lagu:");
 Dialogy.setContentView(toplayer);
 
 scroller.addView(Layer);
@@ -203,23 +198,11 @@ Dialogy.show();
 Layer.addView(third);
 Layer.addView(second);
 Layer.addView(first);
-Layer.addView(thirdy);
-Layer.addView(secondy);
-Layer.addView(firsty);
-Layer.addView(buggy);
-Layer.addView(support);
 Layer.addView(Exit);
 
-buggy.setTextSize(20);
-
-third.setText("List of Music: \nColdplay - Hymn For The Weekend \nColdplay - Viva La Vida \nDillon Francis, DJ Snake - Get Low \nMAGIC! - Lay You Down Easy ft. Sean Paul \nSKRILLEX - Bangarang feat. Sirah \nSkrillex and Diplo -Where Are U Now- \nBro Safari - Scumbag \nSKisM - Experts (Original Mix) \nHardwell - Spaceman \nFor Elise - Ludwig van Beethoven");
+third.setText("List of Music: \nColdplay - Hymn For The Weekend \nColdplay - Viva La Vida \nDillon Francis, DJ Snake - Get Low \nMAGIC! - Lay You Down Easy ft. Sean Paul \nSKRILLEX - Bangarang feat. Sirah \nSkrillex and Diplo -Where Are U Now- \nBro Safari - Scumbag \nSKisM - Experts (Original Mix) \nHardwell - Spaceman \nFor Elise - Ludwig van Beethoven \nSkrillex - Make It Bun Dem");
 second.setText("\nLagu yang lama telah saya ganti menjadi yang baru ^-^");
 first.setText("\n\nMau lebih banyak ? Gampang anda tinggal req saja ke saya lewat kontak dibawah ini ! \nFacebook: http://www.fb.me/m.rakha.f \nE-Mail: zozbangz@gmail.com \n\nJangan lupa untuk support developers yang asli ya ^-^ ! \nThx to AJ170 & All");
-thirdy.setText("");
-secondy.setText("");
-firsty.setText("");
-buggy.setText("");
-support.setText("");
 Exit.setText("Ok");
 
 Exit.setOnClickListener(new android.view.View.OnClickListener(){
@@ -237,7 +220,8 @@ print("AJMODS MCPE FOUND A ERROR "+e)
 }});
 }
 
-function Info() {
+//ChangeLog (GLX)
+function changeLog() {
 ctx.runOnUiThread(new java.lang.Runnable(){
 run: function(){ 
 try{
@@ -248,9 +232,77 @@ var scroller = new android.widget.ScrollView(ctx);
 var third = new android.widget.TextView(ctx);
 var second = new android.widget.TextView(ctx);
 var first = new android.widget.TextView(ctx);
-var thirdy = new android.widget.TextView(ctx);
-var secondy = new android.widget.TextView(ctx);
-var firsty = new android.widget.TextView(ctx);
+var Dialogy = new android.app.Dialog(ctx);
+var Exit = new android.widget.Button(ctx);
+
+Dialogy.setTitle("Change Log");
+Dialogy.setContentView(toplayer);
+
+scroller.addView(Layer);
+toplayer.addView(scroller);
+
+toplayer.setOrientation(android.widget.LinearLayout.HORIZONTAL);
+Layer.setOrientation(android.widget.LinearLayout.VERTICAL);
+Dialogy.show();
+Layer.addView(third);
+Layer.addView(second);
+Layer.addView(first);
+Layer.addView(Exit);
+
+third.setText("1.2 \n+Translate to Indonesian \n+Changed Track List \n+Added New Menu (YT GLX) \n+Changed AutoUpdate \n+More");
+second.setText("\n\n1.3 \n+Added New Menu (ChangeLog) \n+Added Music Dialog \n+More");
+first.setText("\n\nBug ? Message To Me ! \nFacebook: http://www.fb.me/m.rakha.f \nE-Mail: zozbangz@gmail.com \n\nJangan lupa untuk support developers yang asli ya ^-^ ! \nThx to AJ170 & All");
+Exit.setText("Ok");
+
+Exit.setOnClickListener(new android.view.View.OnClickListener(){
+onClick: function(view){
+Dialogy.dismiss();
+}
+});
+
+Log.setHeight(android.widget.LinearLayout.LayoutParams.WRAP_CONTENT);
+Log.setWidth(android.widget.LinearLayout.LayoutParams.WRAP_CONTENT);
+Log.showAtLocation(ctx.getWindow().getDecorView(), android.view.Gravity.TOP, 0, 0);
+} catch (e){
+print("AJMODS MCPE FOUND A ERROR "+e)
+}
+}});
+}
+
+function MusicPF() {
+    try {
+        var upd = new android.app.AlertDialog.Builder(ctx);
+        upd.setTitle("Musik");
+        upd.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
+        upd.setNegativeButton("Tidak", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(par1) {
+            dialog.dismiss(); 
+   }
+        });
+        upd.setPositiveButton("Ya", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(par1) {
+				 playMusic();
+				 clientMessage("Enjoy your music ^-^");
+            }
+        });
+        var dialog = upd.create();
+        dialog.show() 
+    }
+    catch(err) {
+        clientMessage("Error: \n" + err);
+    }
+}
+
+function Info() {
+ctx.runOnUiThread(new java.lang.Runnable(){
+run: function(){ 
+try{
+Log = new android.widget.PopupWindow();
+var toplayer = new android.widget.LinearLayout(ctx);
+var Layer = new android.widget.LinearLayout(ctx);
+var scroller = new android.widget.ScrollView(ctx);
+var third = new android.widget.TextView(ctx);
+var second = new android.widget.TextView(ctx);
 var buggy = new android.widget.TextView(ctx);
 var support = new android.widget.TextView(ctx);
 var Dialogy = new android.app.Dialog(ctx);
@@ -267,10 +319,6 @@ Layer.setOrientation(android.widget.LinearLayout.VERTICAL);
 Dialogy.show();
 Layer.addView(third);
 Layer.addView(second);
-Layer.addView(first);
-Layer.addView(thirdy);
-Layer.addView(secondy);
-Layer.addView(firsty);
 Layer.addView(buggy);
 Layer.addView(support);
 Layer.addView(Exit);
@@ -279,10 +327,6 @@ buggy.setTextSize(20);
 
 third.setText("Tekan Dan Tahan Tombol Menu Untuk Memindahkan!");
 second.setText("\nJika Indikator Darah Tidak Ada Gambar, Mohon Reload BlockLauncher!");
-first.setText("");
-thirdy.setText("");
-secondy.setText("");
-firsty.setText("");
 buggy.setText("\nBugs:");
 support.setText("Sometimes You Cant Hit Dismiss \nBefore Turning Off Sniper/Lantern You Have To Select A Diffrent Item \n XYZ Teleporter Is Broken\nUnknown Bug(Pls. Report It)\n\n\n@AJ170_iOS_King\nYouTube AJ170 \nKiK AJ170.iPA \n(Links At The Bottom Of The Main Menu)");
 Exit.setText("Tutup");
@@ -639,7 +683,8 @@ var music = [
 	["For Elise - Ludwig van Beethoven", "https://www.dropbox.com/s/ibv8tc1nkkqixab/For%20Elise%20-%20Ludwig%20van%20Beethoven.mp3?dl=1"],
 	["Hardwell - Spaceman (Carnage Festival Trap Remix)", "https://www.dropbox.com/s/fgmd73ndfs9o4km/Hardwell%20-%20Spaceman%20%28Carnage%20Festival%20Trap%20Remix%29.mp3?dl=1"],
     ["SKisM - Experts (Original Mix)", "https://www.dropbox.com/s/f3tizc90nqdtcge/SKisM%20-%20Experts%20%28Original%20Mix%29.mp3?dl=1"],
-	["Bro Safari - Scumbag", "https://www.dropbox.com/s/i22peqbfx2mcr1o/Bro%20Safari%20-%20Scumbag.mp3?dl=1"]
+	["Bro Safari - Scumbag", "https://www.dropbox.com/s/i22peqbfx2mcr1o/Bro%20Safari%20-%20Scumbag.mp3?dl=1"],
+	["Skrillex & Damian -Jr. Gong- Marley - Make It Bun Dem", "https://www.dropbox.com/s/kx941l6e4lrwrtw/Skrillex%20%26%20Damian%20-Jr.%20Gong-%20Marley%20-%20Make%20It%20Bun%20Dem.mp3?dl=1"]
 ];
 
 function playMusic() {
@@ -2690,7 +2735,7 @@ return ChatColor[a[Math.floor(Math.random()*(a.length+1))]]
 
 
 //Update Code//
-var version="1.2";
+var version="1.3";
 var checkForUpdate=false;
 var updateWindow=false;
 var newUpdate;
@@ -2720,7 +2765,7 @@ var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
                     updateWindow=true;
                 }
                 else if(version+"\n"==checkedVersion){
-                clientMessage("Versi Mod Anda Sudah Yang Terbaru ^-^");
+                clientMessage("Latest Version !");
                 }
             }
             catch(err) {
@@ -2729,7 +2774,7 @@ var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
                                 clientMessage("Tidak ada koneksi.");
                             }
                             else {
-                                clientMessage("  Error: \n" + err);
+                                clientMessage("Error: \n" + err);
                             } 
             }
         }
@@ -2752,7 +2797,7 @@ function updateVersion() {
 				 android.widget.Toast.makeText(ctx,"Opening the URL...",0).show();
 						var intentBrowser = new android.content.Intent(ctx);
 						intentBrowser.setAction(android.content.Intent.ACTION_VIEW);
-						intentBrowser.setData(android.net.Uri.parse(""));
+						intentBrowser.setData(android.net.Uri.parse("https://www.facebook.com/groups/AJRMOD.UPDATE/"));
 	             ctx.startActivity(intentBrowser)
             }
         });
@@ -7106,14 +7151,24 @@ ModPE.langEdit("deathScreen.message","§4Innalillahi");
 }
 
 //Random Text (GLX)
-function randW(x){return x[Math.floor(Math.random()*x.length)]}
+function randW(x){
+	return x[Math.floor(Math.random()*x.length)];
+	var loopW=0;
+	}
 
-//Var for the text
+//Looping For Re-Fresh Text
+do {
+    ModPE.langEdit("progressScreen.message.locating",randW(word.messageLocating));
+    loopW++;
+}
+while (loopW < 1);
+	
+//Var for the text (GLX)
+var loopW;
 var word = {
 	messageLocating:["§3Finding Kids To Troll","§eTrying to grief server","§4Grief Is Da Best","§f§kEaster §5Egg","§aDrinking Vodka","§aThanks Jeb_"]
 }
 			
-ModPE.langEdit("progressScreen.message.locating",randW(word.messageLocating));
 ModPE.langEdit("progressScreen.message.done","§9Have Fun!");
 ModPE.langEdit("progressScreen.message.building","Remake By: §e§l§oGoogleX");
 ModPE.langEdit("progressScreen.cantConnect","§6Stop Using §eMcDonalds §5WiFi!");
@@ -7177,7 +7232,6 @@ function dip2px(ctx, dips){
 }
 
 function newLevel(){
-playMusic();
 LoadTeleports();
 Info();
     clientMessage("§l§3===========================");
@@ -7186,6 +7240,7 @@ clientMessage("§b§l§oMenu By §6170_Crew");
 clientMessage("§b§l§oRemade by §aGoogleX")
 clientMessage("§b§l§ox: " + Math.floor(Player.getX()) + " §b§l§oy: " + Math.floor(Player.getY() - 1) + " §b§l§oz: " + Math.floor(Player.getZ()));
 clientMessage("§l§3===========================");
+MusicPF();
 
 Cbutton();
 }
@@ -7211,7 +7266,7 @@ ctx.runOnUiThread(new Runnable({ run: function() {
 		menuBtn.setOnLongClickListener(new android.view.View.OnLongClickListener() {
 					onLongClick: function(v,t) {
 						pressed=true;
-						android.widget.Toast.makeText(ctx, "Drag the button to move it", 1).show();
+						android.widget.Toast.makeText(ctx, "Geser tombolnya untuk memindahkan", 1).show();
 						ctx.getSystemService(android.content.Context.VIBRATOR_SERVICE).vibrate(37);
 						return true;
 					}
@@ -9324,6 +9379,7 @@ closeUI.dismiss();
 }); 
 menuLayout.addView(cT28);
 
+//NEW (GLX)
 var cTL01 = new android.widget.Button(ctx);
                 cTL01.setText("YouTube GLX");
 				cTL01.setTextColor(android.graphics.Color.RED);
@@ -9341,6 +9397,18 @@ closeUI.dismiss();
 				}
 }); 
 menuLayout.addView(cTL01);
+//ChangeLog (GLX)
+var cTC01 = new android.widget.Button(ctx);
+                cTC01.setText("Changelog");
+				cTC01.setTextColor(android.graphics.Color.GRAY);
+cTC01.setOnClickListener(new android.view.View.OnClickListener(){
+                onClick: function(view){
+changeLog();
+droidPE.dismiss();
+closeUI.dismiss();
+				}
+}); 
+menuLayout.addView(cTC01);
 
 //Menu Background Settings
                        var background = new android.graphics.drawable.BitmapDrawable(scaledBackgroundDarkDirtImageDecoded);
