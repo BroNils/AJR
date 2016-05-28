@@ -253,7 +253,7 @@ Layer.addView(Exit);
 
 third.setText("1.2 \n+Translate to Indonesian \n+Changed Track List \n+Added New Menu (YT GLX) \n+Changed AutoUpdate \n+More");
 second.setText("\n\n1.3 \n+Added New Menu (ChangeLog) \n+Added Music Dialog \n+More");
-another1.setText("\n\n1.4 \n=Bug Fixed (messageLocating) \nSorry For The Bug ^-^")
+another1.setText("\n\n1.4 \n=Bug Fixed (messageLocating) \nSorry For The Bug ^-^");
 first.setText("\n\nBug ? Message To Me ! \nFacebook: http://www.fb.me/m.rakha.f \nE-Mail: zozbangz@gmail.com \n\nJangan lupa untuk support developers yang asli ya ^-^ ! \nThx to AJ170 & All");
 Exit.setText("Ok");
 
