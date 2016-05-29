@@ -296,14 +296,14 @@ print("AJMODS MCPE FOUND A ERROR "+e)
 }
 }});
 }
-//Music Dialog (GLX)
+//Music Dialog (GLX) *Dev
 function MusicPF() {
         var mpf = new android.app.AlertDialog.Builder(ctx);
         mpf.setTitle("Musik");
         mpf.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
         mpf.setNegativeButton("Tidak", new android.content.DialogInterface.OnClickListener() {
             onClick: function(x) {
-            mpfd.dismiss(); 
+            dialog.dismiss(); 
    }
         });
         mpf.setPositiveButton("Ya", new android.content.DialogInterface.OnClickListener() {
@@ -312,8 +312,8 @@ function MusicPF() {
 				 clientMessage("Enjoy your music ^-^");
             }
         });
-        var mpfd = mpf.create();
-        mpfd.show() 
+        var dialog = mpf.create();
+        dialog.show() 
 		
     catch(err) {
         clientMessage("Error: \n" + err);
