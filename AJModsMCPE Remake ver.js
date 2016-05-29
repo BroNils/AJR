@@ -1,14 +1,30 @@
-/*                      ___
-    / \                |     |
-  / ∆ \     ___    |     |
- / ___ \   \   \__|     |
-/          \   \______  |
+/*
+   _____        ____      ____  __ __                
+  /  _  \      |    |    |    |/ _|__| ____    ____  
+ /  /_\  \     |    |    |      < |  |/    \  / ___\ 
+/    |    \/\__|    |    |    |  \|  |   |  \/ /_/  >
+\____|__  /\________|____|____|__ \__|___|  /\___  / 
+        \/         /_____/       \/       \//_____/  
 * @author AJ170
 
 Made By AJ170 If You Want To Use Any Code Please Ask I Will More Than Likly Let You Contact Me @AJ170_iOS_King (Twitter) or kik.me/AJ170.iPA (KiK)
 */
-//R.I.P English
-//Remade by GoogleX
+/*
+  ."""   "      ""   ""
+  ;      ;       "" ""
+  ;  ''  ;        """
+   """   '"""    "" ""
+                ""   ""
+  ________                      __         ____  ___
+ /  _____/  ____   ____   ____ |  |   ____ \   \/  /
+/   \  ___ /  _ \ /  _ \ / ___\|  | _/ __ \ \     / 
+\    \_\  (  <_> |  <_> ) /_/  >  |_\  ___/ /     \ 
+ \______  /\____/ \____/\___  /|____/\___  >___/\  \
+        \/             /_____/           \/      \_/
+		
+R.I.P English
+*Remade by  @GoogleX
+*/
 
 //Widgets
 var Button = android.widget.Button;
@@ -234,6 +250,7 @@ var second = new android.widget.TextView(ctx);
 var another1 = new android.widget.TextView(ctx);
 var another2 = new android.widget.TextView(ctx);
 var another3 = new android.widget.TextView(ctx);
+var another4 = new android.widget.TextView(ctx);
 var first = new android.widget.TextView(ctx);
 var Dialogy = new android.app.Dialog(ctx);
 var Exit = new android.widget.Button(ctx);
@@ -252,6 +269,7 @@ Layer.addView(second);
 Layer.addView(another1);
 Layer.addView(another2);
 Layer.addView(another3);
+Layer.addView(another4);
 Layer.addView(first);
 Layer.addView(Exit);
 
@@ -260,6 +278,7 @@ second.setText("\n\n1.3 Stable \n+Added New Menu (ChangeLog) \n+Added Music Dial
 another1.setText("\n\n1.4 Dev \n=Bug Fixed \nSorry For The Bug ^-^");
 another2.setText("\n\n1.5 Stable \n=Bug Fixed (Loop)");
 another3.setText("\n\n1.6 Stable \n=Much Bug Is Fixed \n+Changed More Image \n+And More");
+another4.setText("\n\n1.7 Stable \n=Our Music Dialog Is Fixed \n+Changed Text Color In Menu");
 first.setText("\n\nBug ? Message To Me ! \nFacebook: http://www.fb.me/m.rakha.f \nE-Mail: zozbangz@gmail.com \n\nJangan lupa untuk support developers yang asli ya ^-^ ! \nThx to AJ170 & All");
 Exit.setText("Ok");
 
@@ -277,9 +296,8 @@ print("AJMODS MCPE FOUND A ERROR "+e)
 }
 }});
 }
-//Music Dialog (GLX) *Still Buggy
+//Music Dialog (GLX)
 function MusicPF() {
-    try {
         var mpf = new android.app.AlertDialog.Builder(ctx);
         mpf.setTitle("Musik");
         mpf.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
@@ -296,7 +314,7 @@ function MusicPF() {
         });
         var mpfd = mpf.create();
         mpfd.show() 
-    }
+		
     catch(err) {
         clientMessage("Error: \n" + err);
     }
@@ -2744,7 +2762,7 @@ return ChatColor[a[Math.floor(Math.random()*(a.length+1))]]
 
 
 //Update Code//
-var version="1.6";
+var version="1.7";
 var checkForUpdate=false;
 var updateWindow=false;
 var newUpdate;
@@ -4172,7 +4190,9 @@ MBaMenu5();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Main Mods⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.GREEN);
+scrollText.setTextSize(15);               
+scrollText.setTextColor(android.graphics.Color.GREEN);
+scrollText.setGravity(Gravity.CENTER);
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -4379,7 +4399,9 @@ MBaMenu7();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠World Options⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.RED);
+scrollText.setTextSize(15);      
+scrollText.setTextColor(android.graphics.Color.RED);
+scrollText.setGravity(Gravity.CENTER);
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -4475,7 +4497,7 @@ Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 MBaLayout.addView(cT12);
 
 var cT13 = new android.widget.Button(ctx);
-                cT13.setText("Hujan Dengan Petir");
+                cT13.setText("Petir");
 				cT13.setTextColor(BUTcurr);
            cT13.setTextSize(BUTsize);                
 		   cT13.getBackground().setColorFilter(BUTcurr2, android.graphics.PorterDuff.Mode.MULTIPLY);
@@ -4581,7 +4603,9 @@ MBaMenu6();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Teleport Options⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.BLACK);
+scrollText.setTextSize(15);            
+scrollText.setTextColor(android.graphics.Color.BLACK);
+scrollText.setGravity(Gravity.CENTER);
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -4761,7 +4785,10 @@ MBaMenu8();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Fun Mods⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.MAGENTA);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.MAGENTA);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -4942,7 +4969,7 @@ var z = Player.getPointedBlockZ();
 		Level.dropItem(x+1,y+5,z,0,264,5);
 		Level.dropItem(x+1,y+5,z+1,0,264,5); 
 
-android.widget.Toast.makeText(ctx,new android.text.Html.fromHtml("<b><font color=#000000>Hanya bekerja pada </b><font color=#00FF21>Creative"),0).show();
+android.widget.Toast.makeText(ctx,new android.text.Html.fromHtml("<font color=#00FF21>Klik block mana saja!"),0).show();
 Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 				}
 }); 
@@ -5033,7 +5060,10 @@ MBaMenu9();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠"+ Player.getName(Player.getEntity()) +" Info⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.YELLOW);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.YELLOW);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -5138,7 +5168,10 @@ MBaMenu10();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Message Menu⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.BLUE);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.BLUE);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -5350,7 +5383,10 @@ MBaMenu11();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Morph Menu⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.GREEN);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.GREEN);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -5407,7 +5443,7 @@ Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 				}
 }); 
 MBaLayout.addView(cT50);
-
+/*
 var cT51 = new android.widget.Button(ctx);
                 cT51.setText("Set Lightning");
 				cT51.setTextColor(BUTcurr);
@@ -5424,7 +5460,7 @@ Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 				}
 }); 
 MBaLayout.addView(cT51);
-
+*/
 var cT52 = new android.widget.Button(ctx);
                 cT52.setText("Set Camera");
 				cT52.setTextColor(BUTcurr);
@@ -5728,7 +5764,10 @@ MBaMenu12();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Settings⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.GRAY);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.GRAY);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -5940,7 +5979,10 @@ MBaMenu13();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Server Menu⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.GRAY);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.GRAY);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -6091,7 +6133,10 @@ MBaMenu14();
 
 var scrollText = new android.widget.TextView(ctx);
 scrollText.setText("⚠Music Player Options⚠");
-scrollText.setTextSize(15);                                                                                  scrollText.setTextColor(android.graphics.Color.GRAY);
+scrollText.setTextSize(15);                                                                                  
+scrollText.setTextColor(android.graphics.Color.GRAY);
+scrollText.setGravity(Gravity.CENTER);
+
 
  
 scrollText.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -7236,7 +7281,6 @@ function dip2px(ctx, dips){
 }
 
 function newLevel(){
-MusicPF();
 LoadTeleports();
 Info();
     clientMessage("§l§3===========================");
@@ -7245,7 +7289,7 @@ clientMessage("§b§l§oMenu By §6170_Crew");
 clientMessage("§b§l§oRemade by §aGoogleX")
 clientMessage("§b§l§ox: " + Math.floor(Player.getX()) + " §b§l§oy: " + Math.floor(Player.getY() - 1) + " §b§l§oz: " + Math.floor(Player.getZ()));
 clientMessage("§l§3===========================");
-
+MusicPF();
 Cbutton();
 }
 
@@ -8615,7 +8659,7 @@ clientMessage("Jump Height Set To§4 5 Blocks");
 
 var button26 = new android.widget.Switch(ctx);
 button26.setText(">Tunjukin Koordinat");
-button26.setTextColor(android.graphics.Color.RED);
+button26.setTextColor(android.graphics.Color.GREEN);
 button26.setChecked(switched26);
 button26.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged: function(){
@@ -8637,7 +8681,7 @@ menuLayout.addView(button26)
 
 var button37 = new android.widget.Switch(ctx);
 button37.setText(">Real Time Display (Player Info)");
-button37.setTextColor(android.graphics.Color.RED);
+button37.setTextColor(android.graphics.Color.GREEN);
 button37.setChecked(switched37);
 button37.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8657,7 +8701,7 @@ menuLayout.addView(button37);
 
 var button36 = new android.widget.Switch(ctx);
 button36.setText(">Pagi Terus");
-button36.setTextColor(android.graphics.Color.RED);
+button36.setTextColor(android.graphics.Color.GREEN);
 button36.setChecked(switched36);
 button36.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8682,7 +8726,7 @@ menuLayout.addView(button36);
 
 var button19 = new android.widget.Switch(ctx);
 button19.setText(">Layar Terbalik");
-button19.setTextColor(android.graphics.Color.MAGENTA);
+button19.setTextColor(android.graphics.Color.GREEN);
 button19.setChecked(switched19);
 button19.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged: function(){
@@ -8704,7 +8748,7 @@ menuLayout.addView(button19)
 
 var button20 = new android.widget.Switch(ctx);
 button20.setText(">Slow Motion");
-button20.setTextColor(android.graphics.Color.MAGENTA);
+button20.setTextColor(android.graphics.Color.GREEN);
 button20.setChecked(switched20);
 button20.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged: function(){
@@ -8726,7 +8770,7 @@ menuLayout.addView(button20)
 
 var button21 = new android.widget.Switch(ctx);
 button21.setText(">Pro Mod");
-button21.setTextColor(android.graphics.Color.MAGENTA);
+button21.setTextColor(android.graphics.Color.GREEN);
 button21.setChecked(switched21);
 button21.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged: function(){
@@ -8748,7 +8792,7 @@ menuLayout.addView(button21)
 
 var button23 = new android.widget.Switch(ctx);
 button23.setText(">Hantu");
-button23.setTextColor(android.graphics.Color.MAGENTA);
+button23.setTextColor(android.graphics.Color.GREEN);
 button23.setChecked(switched23);
 button23.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged: function(){
@@ -8772,7 +8816,7 @@ menuLayout.addView(button23)
 
 var button33 = new android.widget.Switch(ctx);
 button33.setText(">Derp Mode");
-button33.setTextColor(android.graphics.Color.MAGENTA);
+button33.setTextColor(android.graphics.Color.GREEN);
 button33.setChecked(switched33);
 button33.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8792,7 +8836,7 @@ menuLayout.addView(button33)
 
 var button38 = new android.widget.Switch(ctx);
 button38.setText(">Partikel");
-button38.setTextColor(android.graphics.Color.MAGENTA);
+button38.setTextColor(android.graphics.Color.GREEN);
 button38.setChecked(switched38);
 button38.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8811,19 +8855,19 @@ Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 menuLayout.addView(button38)
 
 var button39 = new android.widget.Switch(ctx);
-button39.setText(">Parachute Fall");
-button39.setTextColor(android.graphics.Color.MAGENTA);
+button39.setText(">Jatuh dengan lambat");
+button39.setTextColor(android.graphics.Color.GREEN);
 button39.setChecked(switched39);
 button39.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
 function(){
 if(switched39 == false) {
 switched39 = true;
-clientMessage("Parachute Fall [§4On§f]");
+clientMessage("Jatuh lambat [§4On§f]");
 Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 }else if(switched39 == true){
 switched39 = false;
-clientMessage("Parachute Fall [§4Off§f]");
+clientMessage("Jatuh lambat [§4Off§f]");
 Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 }
 }
@@ -8832,7 +8876,7 @@ menuLayout.addView(button39)
 
 var button40 = new android.widget.Switch(ctx);
 button40.setText(">Auto Switch");
-button40.setTextColor(android.graphics.Color.MAGENTA);
+button40.setTextColor(android.graphics.Color.GREEN);
 button40.setChecked(switched40);
 button40.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8854,7 +8898,7 @@ menuLayout.addView(button40)
 
 var button46 = new android.widget.Switch(ctx);
 button46.setText(">Colored Name");
-button46.setTextColor(android.graphics.Color.MAGENTA);
+button46.setTextColor(android.graphics.Color.GREEN);
 button46.setChecked(switched46);
 button46.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8874,7 +8918,7 @@ menuLayout.addView(button46)
 
 var button47 = new android.widget.Switch(ctx);
 button47.setText(">Point To Kill");
-button47.setTextColor(android.graphics.Color.MAGENTA);
+button47.setTextColor(android.graphics.Color.GREEN);
 button47.setChecked(pointKill);
 button47.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8894,7 +8938,7 @@ menuLayout.addView(button47)
 
 var button48 = new android.widget.Switch(ctx);
 button48.setText(">Freeze On Point");
-button48.setTextColor(android.graphics.Color.MAGENTA);
+button48.setTextColor(android.graphics.Color.GREEN);
 button48.setChecked(entiStop);
 button48.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8933,7 +8977,7 @@ menuLayout.addView(button49)*/
 
 var button50 = new android.widget.Switch(ctx);
 button50.setText(">Kritikal Hit");
-button50.setTextColor(android.graphics.Color.MAGENTA);
+button50.setTextColor(android.graphics.Color.GREEN);
 button50.setChecked(autocrit);
 button50.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8953,7 +8997,7 @@ menuLayout.addView(button50)
 
 var button51 = new android.widget.Switch(ctx);
 button51.setText(">Obor");
-button51.setTextColor(android.graphics.Color.MAGENTA);
+button51.setTextColor(android.graphics.Color.GREEN);
 button51.setChecked(switched48);
 button51.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8961,7 +9005,7 @@ function(){
 if(switched48 == false) {
 switched48 = true;
 clientMessage("Obor [§4On§f]");
-android.widget.Toast.makeText(ctx,new android.text.Html.fromHtml("<b><font color=#29FF00>Pegang </b><font color=#FFC000>Torch"),0).show();
+android.widget.Toast.makeText(ctx,new android.text.Html.fromHtml("<b><font color=#29FF00>Pegang </b><font color=#FFC000>Torch !!!"),0).show();
 addItemInventory(50,2,0);
 Level.playSound(getPlayerX(), getPlayerY(), getPlayerZ(), "random.pop", 1, 1);
 }else if(switched48 == true){
@@ -8976,7 +9020,7 @@ menuLayout.addView(button51)
 
 var button52 = new android.widget.Switch(ctx);
 button52.setText(">Darah");
-button52.setTextColor(android.graphics.Color.MAGENTA);
+button52.setTextColor(android.graphics.Color.GREEN);
 button52.setChecked(switched49);
 button52.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -8996,7 +9040,7 @@ menuLayout.addView(button52)
 
 var button53 = new android.widget.Switch(ctx);
 button53.setText(">Kill Aura");
-button53.setTextColor(android.graphics.Color.MAGENTA);
+button53.setTextColor(android.graphics.Color.GREEN);
 button53.setChecked(switched50);
 button53.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -9016,7 +9060,7 @@ menuLayout.addView(button53)
 
 var button54 = new android.widget.Switch(ctx);
 button54.setText(">Freeze Aura");
-button54.setTextColor(android.graphics.Color.MAGENTA);
+button54.setTextColor(android.graphics.Color.GREEN);
 button54.setChecked(switched51);
 button54.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener({
 onCheckedChanged:
@@ -9036,8 +9080,11 @@ menuLayout.addView(button54)
 
 
 
-textview = android.widget.TextView(ctx);            textview.setText("⚠Setelan Game⚠"); 
-textview.setTextSize(20);                                                                                  textview.setTextColor(android.graphics.Color.WHITE);
+textview = android.widget.TextView(ctx);            
+textview.setText("⚠Setelan Game⚠"); 
+textview.setTextSize(20);  
+textview.setTextColor(android.graphics.Color.WHITE);
+textview.setGravity(Gravity.CENTER);
 textview.setBackgroundDrawable(new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, [android.graphics.Color.RED, android.graphics.Color.MAGENTA, android.graphics.Color.RED]));       
 
 menuLayout.addView(textview);
@@ -9321,14 +9368,14 @@ var cmd= new android.widget.ImageView(ctx);
 var cmd= new android.widget.ImageView(ctx);
    cmd.setImageBitmap(android.graphics.BitmapFactory.decodeByteArray(android.util.Base64.decode(cmdd03,0), 0, android.util.Base64.decode(cmdd03,0).length))
   menuLayout.addView(cmd)
+  
+ var cmd= new android.widget.ImageView(ctx);
+   cmd.setImageBitmap(android.graphics.BitmapFactory.decodeByteArray(android.util.Base64.decode(cmdr1,0), 0, android.util.Base64.decode(cmdr1,0).length))
+  menuLayout.addView(cmd)
 
 
  var cmd= new android.widget.ImageView(ctx);
    cmd.setImageBitmap(android.graphics.BitmapFactory.decodeByteArray(android.util.Base64.decode(cmdd2,0), 0, android.util.Base64.decode(cmdd2,0).length))
-  menuLayout.addView(cmd)
-
- var cmd= new android.widget.ImageView(ctx);
-   cmd.setImageBitmap(android.graphics.BitmapFactory.decodeByteArray(android.util.Base64.decode(cmdr1,0), 0, android.util.Base64.decode(cmdr1,0).length))
   menuLayout.addView(cmd)
 
 
