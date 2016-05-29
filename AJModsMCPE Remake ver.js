@@ -296,29 +296,6 @@ print("AJMODS MCPE FOUND A ERROR "+e)
 }
 }});
 }
-//Music Dialog (GLX) *Dev
-function MusicPF() {
-        var mpf = new android.app.AlertDialog.Builder(ctx);
-        mpf.setTitle("Musik");
-        mpf.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
-        mpf.setNegativeButton("Tidak", new android.content.DialogInterface.OnClickListener() {
-            onClick: function(x) {
-            dialog.dismiss(); 
-   }
-        });
-        mpf.setPositiveButton("Ya", new android.content.DialogInterface.OnClickListener() {
-            onClick: function(x) {
-				 playMusic();
-				 clientMessage("Enjoy your music ^-^");
-            }
-        });
-        var dialog = mpf.create();
-        dialog.show() 
-		
-    catch(err) {
-        clientMessage("Error: \n" + err);
-    }
-}
 
 function Info() {
 ctx.runOnUiThread(new java.lang.Runnable(){
@@ -2835,6 +2812,31 @@ function updateVersion() {
         clientMessage(" Error: \n" + err);
     }
 }
+
+//Music Dialog (GLX) *Dev
+function MusicPF() {
+        var mpf = new android.app.AlertDialog.Builder(ctx);
+        mpf.setTitle("Musik");
+        mpf.setMessage("Kami punya musik player ! \nIngin mendengarkan musik ?");
+        mpf.setNegativeButton("Tidak", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(x) {
+            dialog.dismiss(); 
+   }
+        });
+        mpf.setPositiveButton("Ya", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(x) {
+				 playMusic();
+				 clientMessage("Enjoy your music ^-^");
+            }
+        });
+        var dialog = mpf.create();
+        dialog.show() 
+		
+    catch(err) {
+        clientMessage("Error: \n" + err);
+    }
+}
+
 function modTick() {
 var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get(); 
 ctx.runOnUiThread(new java.lang.Runnable(){
